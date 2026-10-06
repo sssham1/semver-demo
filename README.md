@@ -23,5 +23,6 @@ python main.py Anna ru
 | v1.1.1 | Patch | Исправлена обработка пустого имени |
 | v1.2.0 | Minor | Поддержка нескольких языков |
 | v1.2.1 | Patch | Исправлен неизвестный язык |
+| v1.3.0 | Minor | Функция прощания (через Pull Request) |
 
 Подробные описания: [CHANGELOG.md](CHANGELOG.md) и папка [release-notes](release-notes/).
