@@ -2,6 +2,7 @@ import sys
 
 
 def greet(name="World"):
+    name = name.strip() or "World"
     print(f"Hello, {name}!")
 
 
