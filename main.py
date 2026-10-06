@@ -1,10 +1,14 @@
 import sys
 
+GREETINGS = {"en": "Hello", "ru": "Привет", "es": "Hola"}
 
-def greet(name="World"):
+
+def greet(name="World", lang="en"):
     name = name.strip() or "World"
-    print(f"Hello, {name}!")
+    print(f"{GREETINGS[lang]}, {name}!")
 
 
 if __name__ == "__main__":
-    greet(sys.argv[1] if len(sys.argv) > 1 else "World")
+    name = sys.argv[1] if len(sys.argv) > 1 else "World"
+    lang = sys.argv[2] if len(sys.argv) > 2 else "en"
+    greet(name, lang)
