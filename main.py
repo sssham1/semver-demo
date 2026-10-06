@@ -5,7 +5,8 @@ GREETINGS = {"en": "Hello", "ru": "Привет", "es": "Hola"}
 
 def greet(name="World", lang="en"):
     name = name.strip() or "World"
-    print(f"{GREETINGS[lang]}, {name}!")
+    word = GREETINGS.get(lang, GREETINGS["en"])
+    print(f"{word}, {name}!")
 
 
 if __name__ == "__main__":
